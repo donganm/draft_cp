@@ -5,8 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      } */
+
+      /* .search-bar {
+        width: 100%;
+        padding: 10px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .search-bar input {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        outline: none;
+        font-size: 16px;
+      } */
+
+      .gallery-container {
+        column-count: 4;
+        column-gap: 40px;
+        /* padding: 20px; */
+        max-width: 1400px;
+        margin: auto;
+      }
+
+      .gallery-item {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        break-inside: avoid;
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.05);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      @media (max-width: 1024px) {
+        .gallery-container {
+          column-count: 3;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .gallery-container {
+          column-count: 2;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .gallery-container {
+          column-count: 1;
+        }
+      }
+
+      h2 {
+        /* color: #f5f6fa; */
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 60px;
+      }
+    </style>
   </head>
   <body>
+    <div>
+      <h1>TRANH VẼ SƯU TẦM</h1>
+    </div>
     <div class="carousel">
       <div class="image-container">
         <img src="img/kyoto.jpg" alt="" />
@@ -19,5 +103,82 @@
         <img src="img/dautruongcolosseum.jpg" alt="" />
       </div>
     </div>
+    <main>
+      <h2>MY ALBUM</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="img/3.jpg" alt="Di sản 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/4.jpg" alt="Di sản 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/5.jpg" alt="Di sản 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/6.jpg" alt="Di sản 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/7.jpg" alt="Di sản 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/8.jpg" alt="Di sản 6" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/3.jpg" alt="Di sản 7" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/7.jpg" alt="Di sản 8" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/3.jpg" alt="Di sản 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/4.jpg" alt="Di sản 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/5.jpg" alt="Di sản 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/6.jpg" alt="Di sản 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/7.jpg" alt="Di sản 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/8.jpg" alt="Di sản 6" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/tajmahal.jpg" alt="Di sản 7" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/7.jpg" alt="Di sản 8" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/3.jpg" alt="Di sản 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/nuthantudo.jpg" alt="Di sản 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/5.jpg" alt="Di sản 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/6.jpg" alt="Di sản 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/anglorwat.jpg" alt="Di sản 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/dautruongcolosseum.jpg" alt="Di sản 6" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/hue.jpg" alt="Di sản 7" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/kyoto.jpg" alt="Di sản 8" />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
